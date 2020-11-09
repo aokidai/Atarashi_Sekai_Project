@@ -1,0 +1,827 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F1008C5-AA3A-44E3-B60E-40F63A0D9767}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewWordProject</RootNamespace>
+    <AssemblyName>NewWordProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44368</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrurayAndDVD\01\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="BrurayAndDVD\01\css\style.css" />
+    <Content Include="BrurayAndDVD\01\images\ad1.gif" />
+    <Content Include="BrurayAndDVD\01\images\ad2.png" />
+    <Content Include="BrurayAndDVD\01\images\bg.jpg" />
+    <Content Include="BrurayAndDVD\01\images\bg1.jpg" />
+    <Content Include="BrurayAndDVD\01\images\bg2.jpg" />
+    <Content Include="BrurayAndDVD\01\images\jouhou.PNG" />
+    <Content Include="BrurayAndDVD\01\images\kumakuma.svg" />
+    <Content Include="BrurayAndDVD\01\images\logo.PNG" />
+    <Content Include="BrurayAndDVD\01\images\logo2.PNG" />
+    <Content Include="BrurayAndDVD\01\images\s3.jpg" />
+    <Content Include="BrurayAndDVD\02\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="BrurayAndDVD\02\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="BrurayAndDVD\02\css\style.css" />
+    <Content Include="BrurayAndDVD\02\images\ad1.gif" />
+    <Content Include="BrurayAndDVD\02\images\ad2.png" />
+    <Content Include="BrurayAndDVD\02\images\bg.jpg" />
+    <Content Include="BrurayAndDVD\02\images\bg1.jpg" />
+    <Content Include="BrurayAndDVD\02\images\bg2.jpg" />
+    <Content Include="BrurayAndDVD\02\images\jouhou.PNG" />
+    <Content Include="BrurayAndDVD\02\images\kumakuma.svg" />
+    <Content Include="BrurayAndDVD\02\images\logo.PNG" />
+    <Content Include="BrurayAndDVD\02\images\logo2.PNG" />
+    <Content Include="BrurayAndDVD\02\images\s1.jpg" />
+    <Content Include="BrurayAndDVD\02\images\s3.jpg" />
+    <Content Include="BrurayAndDVD\03\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="BrurayAndDVD\03\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="BrurayAndDVD\03\css\style.css" />
+    <Content Include="BrurayAndDVD\03\images\ad1.gif" />
+    <Content Include="BrurayAndDVD\03\images\ad2.png" />
+    <Content Include="BrurayAndDVD\03\images\bg.jpg" />
+    <Content Include="BrurayAndDVD\03\images\bg1.jpg" />
+    <Content Include="BrurayAndDVD\03\images\bg2.jpg" />
+    <Content Include="BrurayAndDVD\03\images\jouhou.PNG" />
+    <Content Include="BrurayAndDVD\03\images\kumakuma.svg" />
+    <Content Include="BrurayAndDVD\03\images\logo.PNG" />
+    <Content Include="BrurayAndDVD\03\images\logo2.PNG" />
+    <Content Include="BrurayAndDVD\03\images\s1.jpg" />
+    <Content Include="BrurayAndDVD\03\images\s3.jpg" />
+    <Content Include="BrurayAndDVD\campaign\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="BrurayAndDVD\campaign\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="BrurayAndDVD\campaign\css\style.css" />
+    <Content Include="BrurayAndDVD\campaign\images\ad1.gif" />
+    <Content Include="BrurayAndDVD\campaign\images\ad2.png" />
+    <Content Include="BrurayAndDVD\campaign\images\bg.jpg" />
+    <Content Include="BrurayAndDVD\campaign\images\bg1.jpg" />
+    <Content Include="BrurayAndDVD\campaign\images\bg2.jpg" />
+    <Content Include="BrurayAndDVD\campaign\images\jouhou.PNG" />
+    <Content Include="BrurayAndDVD\campaign\images\kumakuma.svg" />
+    <Content Include="BrurayAndDVD\campaign\images\logo.PNG" />
+    <Content Include="BrurayAndDVD\campaign\images\logo2.PNG" />
+    <Content Include="BrurayAndDVD\campaign\images\s1.jpg" />
+    <Content Include="BrurayAndDVD\campaign\images\s3.jpg" />
+    <Content Include="BrurayAndDVD\privilege\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="BrurayAndDVD\privilege\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="BrurayAndDVD\privilege\css\style.css" />
+    <Content Include="BrurayAndDVD\privilege\images\ad1.gif" />
+    <Content Include="BrurayAndDVD\privilege\images\ad2.png" />
+    <Content Include="BrurayAndDVD\privilege\images\bg.jpg" />
+    <Content Include="BrurayAndDVD\privilege\images\bg1.jpg" />
+    <Content Include="BrurayAndDVD\privilege\images\bg2.jpg" />
+    <Content Include="BrurayAndDVD\privilege\images\jouhou.PNG" />
+    <Content Include="BrurayAndDVD\privilege\images\kumakuma.svg" />
+    <Content Include="BrurayAndDVD\privilege\images\logo.PNG" />
+    <Content Include="BrurayAndDVD\privilege\images\logo2.PNG" />
+    <Content Include="BrurayAndDVD\privilege\images\s1.jpg" />
+    <Content Include="BrurayAndDVD\privilege\images\s3.jpg" />
+    <Content Include="Chara\01\css\style.css" />
+    <Content Include="Chara\01\images\ad1.gif" />
+    <Content Include="Chara\01\images\ad2.png" />
+    <Content Include="Chara\01\images\bg.jpg" />
+    <Content Include="Chara\01\images\bg1.jpg" />
+    <Content Include="Chara\01\images\bg2.jpg" />
+    <Content Include="Chara\01\images\jouhou.PNG" />
+    <Content Include="Chara\01\images\kumakuma.svg" />
+    <Content Include="Chara\01\images\l3%281%29.png" />
+    <Content Include="Chara\01\images\l3%282%29.png" />
+    <Content Include="Chara\01\images\l3%283%29.png" />
+    <Content Include="Chara\01\images\l3%284%29.png" />
+    <Content Include="Chara\01\images\l3%285%29.png" />
+    <Content Include="Chara\01\images\l3%286%29.png" />
+    <Content Include="Chara\01\images\l3%287%29.png" />
+    <Content Include="Chara\01\images\l3.png" />
+    <Content Include="Chara\01\images\logo.PNG" />
+    <Content Include="Chara\01\images\logo2.PNG" />
+    <Content Include="Chara\01\images\s1.jpg" />
+    <Content Include="Chara\01\images\s3.jpg" />
+    <Content Include="Chara\01\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\01\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\02\css\style.css" />
+    <Content Include="Chara\02\images\ad1.gif" />
+    <Content Include="Chara\02\images\ad2.png" />
+    <Content Include="Chara\02\images\bg.jpg" />
+    <Content Include="Chara\02\images\bg1.jpg" />
+    <Content Include="Chara\02\images\bg2.jpg" />
+    <Content Include="Chara\02\images\jouhou.PNG" />
+    <Content Include="Chara\02\images\kumakuma.svg" />
+    <Content Include="Chara\02\images\l3%281%29.png" />
+    <Content Include="Chara\02\images\l3%282%29.png" />
+    <Content Include="Chara\02\images\l3%283%29.png" />
+    <Content Include="Chara\02\images\l3%284%29.png" />
+    <Content Include="Chara\02\images\l3%285%29.png" />
+    <Content Include="Chara\02\images\l3%286%29.png" />
+    <Content Include="Chara\02\images\l3%287%29.png" />
+    <Content Include="Chara\02\images\l3.png" />
+    <Content Include="Chara\02\images\logo.PNG" />
+    <Content Include="Chara\02\images\logo2.PNG" />
+    <Content Include="Chara\02\images\s1.jpg" />
+    <Content Include="Chara\02\images\s3.jpg" />
+    <Content Include="Chara\02\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\02\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\03\css\style.css" />
+    <Content Include="Chara\03\images\ad1.gif" />
+    <Content Include="Chara\03\images\ad2.png" />
+    <Content Include="Chara\03\images\bg.jpg" />
+    <Content Include="Chara\03\images\bg1.jpg" />
+    <Content Include="Chara\03\images\bg2.jpg" />
+    <Content Include="Chara\03\images\jouhou.PNG" />
+    <Content Include="Chara\03\images\kumakuma.svg" />
+    <Content Include="Chara\03\images\l3%281%29.png" />
+    <Content Include="Chara\03\images\l3%282%29.png" />
+    <Content Include="Chara\03\images\l3%283%29.png" />
+    <Content Include="Chara\03\images\l3%284%29.png" />
+    <Content Include="Chara\03\images\l3%285%29.png" />
+    <Content Include="Chara\03\images\l3%286%29.png" />
+    <Content Include="Chara\03\images\l3%287%29.png" />
+    <Content Include="Chara\03\images\l3.png" />
+    <Content Include="Chara\03\images\logo.PNG" />
+    <Content Include="Chara\03\images\logo2.PNG" />
+    <Content Include="Chara\03\images\s1.jpg" />
+    <Content Include="Chara\03\images\s3.jpg" />
+    <Content Include="Chara\03\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\03\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\04\css\style.css" />
+    <Content Include="Chara\04\images\ad1.gif" />
+    <Content Include="Chara\04\images\ad2.png" />
+    <Content Include="Chara\04\images\bg.jpg" />
+    <Content Include="Chara\04\images\bg1.jpg" />
+    <Content Include="Chara\04\images\bg2.jpg" />
+    <Content Include="Chara\04\images\jouhou.PNG" />
+    <Content Include="Chara\04\images\kumakuma.svg" />
+    <Content Include="Chara\04\images\l3%281%29.png" />
+    <Content Include="Chara\04\images\l3%282%29.png" />
+    <Content Include="Chara\04\images\l3%283%29.png" />
+    <Content Include="Chara\04\images\l3%284%29.png" />
+    <Content Include="Chara\04\images\l3%285%29.png" />
+    <Content Include="Chara\04\images\l3%286%29.png" />
+    <Content Include="Chara\04\images\l3%287%29.png" />
+    <Content Include="Chara\04\images\l3.png" />
+    <Content Include="Chara\04\images\logo.PNG" />
+    <Content Include="Chara\04\images\logo2.PNG" />
+    <Content Include="Chara\04\images\s1.jpg" />
+    <Content Include="Chara\04\images\s3.jpg" />
+    <Content Include="Chara\04\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\04\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\05\css\style.css" />
+    <Content Include="Chara\05\images\ad1.gif" />
+    <Content Include="Chara\05\images\ad2.png" />
+    <Content Include="Chara\05\images\bg.jpg" />
+    <Content Include="Chara\05\images\bg1.jpg" />
+    <Content Include="Chara\05\images\bg2.jpg" />
+    <Content Include="Chara\05\images\jouhou.PNG" />
+    <Content Include="Chara\05\images\kumakuma.svg" />
+    <Content Include="Chara\05\images\l3%281%29.png" />
+    <Content Include="Chara\05\images\l3%282%29.png" />
+    <Content Include="Chara\05\images\l3%283%29.png" />
+    <Content Include="Chara\05\images\l3%284%29.png" />
+    <Content Include="Chara\05\images\l3%285%29.png" />
+    <Content Include="Chara\05\images\l3%286%29.png" />
+    <Content Include="Chara\05\images\l3%287%29.png" />
+    <Content Include="Chara\05\images\l3.png" />
+    <Content Include="Chara\05\images\logo.PNG" />
+    <Content Include="Chara\05\images\logo2.PNG" />
+    <Content Include="Chara\05\images\s1.jpg" />
+    <Content Include="Chara\05\images\s3.jpg" />
+    <Content Include="Chara\05\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\05\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\06\css\style.css" />
+    <Content Include="Chara\06\images\ad1.gif" />
+    <Content Include="Chara\06\images\ad2.png" />
+    <Content Include="Chara\06\images\bg.jpg" />
+    <Content Include="Chara\06\images\bg1.jpg" />
+    <Content Include="Chara\06\images\bg2.jpg" />
+    <Content Include="Chara\06\images\jouhou.PNG" />
+    <Content Include="Chara\06\images\kumakuma.svg" />
+    <Content Include="Chara\06\images\l3%281%29.png" />
+    <Content Include="Chara\06\images\l3%282%29.png" />
+    <Content Include="Chara\06\images\l3%283%29.png" />
+    <Content Include="Chara\06\images\l3%284%29.png" />
+    <Content Include="Chara\06\images\l3%285%29.png" />
+    <Content Include="Chara\06\images\l3%286%29.png" />
+    <Content Include="Chara\06\images\l3%287%29.png" />
+    <Content Include="Chara\06\images\l3.png" />
+    <Content Include="Chara\06\images\logo.PNG" />
+    <Content Include="Chara\06\images\logo2.PNG" />
+    <Content Include="Chara\06\images\s1.jpg" />
+    <Content Include="Chara\06\images\s3.jpg" />
+    <Content Include="Chara\06\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\06\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\07\css\style.css" />
+    <Content Include="Chara\07\images\ad1.gif" />
+    <Content Include="Chara\07\images\ad2.png" />
+    <Content Include="Chara\07\images\bg.jpg" />
+    <Content Include="Chara\07\images\bg1.jpg" />
+    <Content Include="Chara\07\images\bg2.jpg" />
+    <Content Include="Chara\07\images\jouhou.PNG" />
+    <Content Include="Chara\07\images\kumakuma.svg" />
+    <Content Include="Chara\07\images\l3%281%29.png" />
+    <Content Include="Chara\07\images\l3%282%29.png" />
+    <Content Include="Chara\07\images\l3%283%29.png" />
+    <Content Include="Chara\07\images\l3%284%29.png" />
+    <Content Include="Chara\07\images\l3%285%29.png" />
+    <Content Include="Chara\07\images\l3%286%29.png" />
+    <Content Include="Chara\07\images\l3%287%29.png" />
+    <Content Include="Chara\07\images\l3.png" />
+    <Content Include="Chara\07\images\logo.PNG" />
+    <Content Include="Chara\07\images\logo2.PNG" />
+    <Content Include="Chara\07\images\s1.jpg" />
+    <Content Include="Chara\07\images\s3.jpg" />
+    <Content Include="Chara\07\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\07\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\08\css\style.css" />
+    <Content Include="Chara\08\images\ad1.gif" />
+    <Content Include="Chara\08\images\ad2.png" />
+    <Content Include="Chara\08\images\bg.jpg" />
+    <Content Include="Chara\08\images\bg1.jpg" />
+    <Content Include="Chara\08\images\bg2.jpg" />
+    <Content Include="Chara\08\images\jouhou.PNG" />
+    <Content Include="Chara\08\images\kumakuma.svg" />
+    <Content Include="Chara\08\images\l3%281%29.png" />
+    <Content Include="Chara\08\images\l3%282%29.png" />
+    <Content Include="Chara\08\images\l3%283%29.png" />
+    <Content Include="Chara\08\images\l3%284%29.png" />
+    <Content Include="Chara\08\images\l3%285%29.png" />
+    <Content Include="Chara\08\images\l3%286%29.png" />
+    <Content Include="Chara\08\images\l3%287%29.png" />
+    <Content Include="Chara\08\images\l3.png" />
+    <Content Include="Chara\08\images\logo.PNG" />
+    <Content Include="Chara\08\images\logo2.PNG" />
+    <Content Include="Chara\08\images\s1.jpg" />
+    <Content Include="Chara\08\images\s3.jpg" />
+    <Content Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Chara\css\style.css" />
+    <Content Include="Chara\images\ad1.gif" />
+    <Content Include="Chara\images\ad2.png" />
+    <Content Include="Chara\images\bg.jpg" />
+    <Content Include="Chara\images\bg1.jpg" />
+    <Content Include="Chara\images\bg2.jpg" />
+    <Content Include="Chara\images\jouhou.PNG" />
+    <Content Include="Chara\images\kumakuma.svg" />
+    <Content Include="Chara\images\l3%281%29.png" />
+    <Content Include="Chara\images\l3%282%29.png" />
+    <Content Include="Chara\images\l3%283%29.png" />
+    <Content Include="Chara\images\l3%284%29.png" />
+    <Content Include="Chara\images\l3%285%29.png" />
+    <Content Include="Chara\images\l3%286%29.png" />
+    <Content Include="Chara\images\l3%287%29.png" />
+    <Content Include="Chara\images\l3.png" />
+    <Content Include="Chara\images\logo.PNG" />
+    <Content Include="Chara\images\logo2.PNG" />
+    <Content Include="Chara\images\s1.jpg" />
+    <Content Include="Chara\images\s3.jpg" />
+    <Content Include="Chara\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Chara\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="css\style.css" />
+    <Content Include="Film\css\style.css" />
+    <Content Include="Film\images\ad1.gif" />
+    <Content Include="Film\images\ad2.png" />
+    <Content Include="Film\images\bg.jpg" />
+    <Content Include="Film\images\bg1.jpg" />
+    <Content Include="Film\images\bg2.jpg" />
+    <Content Include="Film\images\jouhou.PNG" />
+    <Content Include="Film\images\kumakuma.svg" />
+    <Content Include="Film\images\logo.PNG" />
+    <Content Include="Film\images\logo2.PNG" />
+    <Content Include="Film\images\s1.jpg" />
+    <Content Include="Film\images\s3.jpg" />
+    <Content Include="Film\ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Film\ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Gensaku\css\style.css" />
+    <Content Include="Gensaku\images\ad1.gif" />
+    <Content Include="Gensaku\images\ad2.png" />
+    <Content Include="Gensaku\images\bg.jpg" />
+    <Content Include="Gensaku\images\bg1.jpg" />
+    <Content Include="Gensaku\images\bg2.jpg" />
+    <Content Include="Gensaku\images\jouhou.PNG" />
+    <Content Include="Gensaku\images\kumakuma.svg" />
+    <Content Include="Gensaku\images\logo.PNG" />
+    <Content Include="Gensaku\images\logo2.PNG" />
+    <Content Include="Gensaku\images\s1.jpg" />
+    <Content Include="Gensaku\images\s3.jpg" />
+    <Content Include="Gensaku\原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Gensaku\原作-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Goods\css\style.css" />
+    <Content Include="Goods\images\ad1.gif" />
+    <Content Include="Goods\images\ad2.png" />
+    <Content Include="Goods\images\bg.jpg" />
+    <Content Include="Goods\images\bg1.jpg" />
+    <Content Include="Goods\images\bg2.jpg" />
+    <Content Include="Goods\images\jouhou.PNG" />
+    <Content Include="Goods\images\kumakuma.svg" />
+    <Content Include="Goods\images\logo.PNG" />
+    <Content Include="Goods\images\logo2.PNG" />
+    <Content Include="Goods\images\s1.jpg" />
+    <Content Include="Goods\images\s3.jpg" />
+    <Content Include="Goods\グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Goods\グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Header_footer\Footer\css\style.css" />
+    <Content Include="Header_footer\Footer\Footer.ascx" />
+    <Content Include="Header_footer\Footer\images\ad1.gif" />
+    <Content Include="Header_footer\Footer\images\ad2.png" />
+    <Content Include="Header_footer\Footer\images\bg.jpg" />
+    <Content Include="Header_footer\Footer\images\bg1.jpg" />
+    <Content Include="Header_footer\Footer\images\bg2.jpg" />
+    <Content Include="Header_footer\Footer\images\jouhou.PNG" />
+    <Content Include="Header_footer\Footer\images\kumakuma.svg" />
+    <Content Include="Header_footer\Footer\images\logo.PNG" />
+    <Content Include="Header_footer\Footer\images\logo2.PNG" />
+    <Content Include="Header_footer\Footer\images\s1.jpg" />
+    <Content Include="Header_footer\Footer\images\s3.jpg" />
+    <Content Include="Header_footer\Header\css\style.css" />
+    <Content Include="Header_footer\Header\Header.ascx" />
+    <Content Include="Header_footer\Header\images\ad1.gif" />
+    <Content Include="Header_footer\Header\images\ad2.png" />
+    <Content Include="Header_footer\Header\images\bg.jpg" />
+    <Content Include="Header_footer\Header\images\bg1.jpg" />
+    <Content Include="Header_footer\Header\images\bg2.jpg" />
+    <Content Include="Header_footer\Header\images\jouhou.PNG" />
+    <Content Include="Header_footer\Header\images\kumakuma.svg" />
+    <Content Include="Header_footer\Header\images\logo.PNG" />
+    <Content Include="Header_footer\Header\images\logo2.PNG" />
+    <Content Include="Header_footer\Header\images\s1.jpg" />
+    <Content Include="Header_footer\Header\images\s3.jpg" />
+    <Content Include="images\ad1.gif" />
+    <Content Include="images\ad2.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg1.jpg" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\jouhou.PNG" />
+    <Content Include="images\kumakuma.svg" />
+    <Content Include="images\logo.PNG" />
+    <Content Include="images\logo2.PNG" />
+    <Content Include="images\s1.jpg" />
+    <Content Include="images\s3.jpg" />
+    <Content Include="Music\css\style.css" />
+    <Content Include="Music\images\ad1.gif" />
+    <Content Include="Music\images\ad2.png" />
+    <Content Include="Music\images\bg.jpg" />
+    <Content Include="Music\images\bg1.jpg" />
+    <Content Include="Music\images\bg2.jpg" />
+    <Content Include="Music\images\jouhou.PNG" />
+    <Content Include="Music\images\kumakuma.svg" />
+    <Content Include="Music\images\logo.PNG" />
+    <Content Include="Music\images\logo2.PNG" />
+    <Content Include="Music\images\s1.jpg" />
+    <Content Include="Music\images\s3.jpg" />
+    <Content Include="Music\ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Music\ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="News\css\style.css" />
+    <Content Include="News\images\ad1.gif" />
+    <Content Include="News\images\ad2.png" />
+    <Content Include="News\images\bg.jpg" />
+    <Content Include="News\images\bg1.jpg" />
+    <Content Include="News\images\bg2.jpg" />
+    <Content Include="News\images\jouhou.PNG" />
+    <Content Include="News\images\kumakuma.svg" />
+    <Content Include="News\images\logo.PNG" />
+    <Content Include="News\images\logo2.PNG" />
+    <Content Include="News\images\s3.jpg" />
+    <Content Include="News\ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="News\ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="OnAir\css\style.css" />
+    <Content Include="OnAir\images\ad1.gif" />
+    <Content Include="OnAir\images\ad2.png" />
+    <Content Include="OnAir\images\bg.jpg" />
+    <Content Include="OnAir\images\bg1.jpg" />
+    <Content Include="OnAir\images\bg2.jpg" />
+    <Content Include="OnAir\images\jouhou.PNG" />
+    <Content Include="OnAir\images\kumakuma.svg" />
+    <Content Include="OnAir\images\logo.PNG" />
+    <Content Include="OnAir\images\logo2.PNG" />
+    <Content Include="OnAir\images\s3.jpg" />
+    <Content Include="OnAir\放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="OnAir\放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="StaffAndCast\css\style.css" />
+    <Content Include="StaffAndCast\images\ad1.gif" />
+    <Content Include="StaffAndCast\images\ad2.png" />
+    <Content Include="StaffAndCast\images\bg.jpg" />
+    <Content Include="StaffAndCast\images\bg1.jpg" />
+    <Content Include="StaffAndCast\images\bg2.jpg" />
+    <Content Include="StaffAndCast\images\jouhou.PNG" />
+    <Content Include="StaffAndCast\images\kumakuma.svg" />
+    <Content Include="StaffAndCast\images\logo.PNG" />
+    <Content Include="StaffAndCast\images\logo2.PNG" />
+    <Content Include="StaffAndCast\images\s1.jpg" />
+    <Content Include="StaffAndCast\images\s3.jpg" />
+    <Content Include="StaffAndCast\スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="StaffAndCast\スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Story\01\css\style.css" />
+    <Content Include="Story\01\images\ad1.gif" />
+    <Content Include="Story\01\images\ad2.png" />
+    <Content Include="Story\01\images\bg.jpg" />
+    <Content Include="Story\01\images\bg1.jpg" />
+    <Content Include="Story\01\images\bg2.jpg" />
+    <Content Include="Story\01\images\jouhou.PNG" />
+    <Content Include="Story\01\images\kumakuma.svg" />
+    <Content Include="Story\01\images\logo.PNG" />
+    <Content Include="Story\01\images\logo2.PNG" />
+    <Content Include="Story\01\images\s1.jpg" />
+    <Content Include="Story\01\images\s3.jpg" />
+    <Content Include="Story\01\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Story\01\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Story\css\style.css" />
+    <Content Include="Story\images\ad1.gif" />
+    <Content Include="Story\images\ad2.png" />
+    <Content Include="Story\images\bg.jpg" />
+    <Content Include="Story\images\bg1.jpg" />
+    <Content Include="Story\images\bg2.jpg" />
+    <Content Include="Story\images\jouhou.PNG" />
+    <Content Include="Story\images\kumakuma.svg" />
+    <Content Include="Story\images\logo.PNG" />
+    <Content Include="Story\images\logo2.PNG" />
+    <Content Include="Story\images\s1.jpg" />
+    <Content Include="Story\images\s3.jpg" />
+    <Content Include="Story\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Story\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Supesharu\css\style.css" />
+    <Content Include="Supesharu\images\ad1.gif" />
+    <Content Include="Supesharu\images\ad2.png" />
+    <Content Include="Supesharu\images\bg.jpg" />
+    <Content Include="Supesharu\images\bg1.jpg" />
+    <Content Include="Supesharu\images\bg2.jpg" />
+    <Content Include="Supesharu\images\jouhou.PNG" />
+    <Content Include="Supesharu\images\kumakuma.svg" />
+    <Content Include="Supesharu\images\logo.PNG" />
+    <Content Include="Supesharu\images\logo2.PNG" />
+    <Content Include="Supesharu\images\s1.jpg" />
+    <Content Include="Supesharu\images\s3.jpg" />
+    <Content Include="Supesharu\スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Supesharu\スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Top\css\style.css" />
+    <Content Include="Top\images\ad1.gif" />
+    <Content Include="Top\images\ad2.png" />
+    <Content Include="Top\images\bg.jpg" />
+    <Content Include="Top\images\bg1.jpg" />
+    <Content Include="Top\images\bg2.jpg" />
+    <Content Include="Top\images\jouhou.PNG" />
+    <Content Include="Top\images\logo.PNG" />
+    <Content Include="Top\images\logo2.PNG" />
+    <Content Include="Top\images\s3.jpg" />
+    <Content Include="Top\TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
+    <Content Include="Top\TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrurayAndDVD\02\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrurayAndDVD\02\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrurayAndDVD\03\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrurayAndDVD\03\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrurayAndDVD\campaign\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrurayAndDVD\campaign\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrurayAndDVD\privilege\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrurayAndDVD\privilege\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\01\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\01\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\02\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\02\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\03\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\03\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\04\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\04\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\05\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\05\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\06\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\06\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\07\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\07\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chara\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chara\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Film\ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Film\ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>ムービー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gensaku\原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gensaku\原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Goods\グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Goods\グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>グッズ-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Header_footer\Footer\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header_footer\Footer\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Header_footer\Header\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header_footer\Header\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Music\ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music\ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>ミュージック-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnAir\放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnAir\放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>放送＆配信-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffAndCast\スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffAndCast\スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>スタッフ＆キャスト-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story\01\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\01\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>ストーリー-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supesharu\スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supesharu\スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>スペシャル-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Top\TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
+      <DependentUpon>TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top\TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.designer.cs">
+      <DependentUpon>TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrurayAndDVD\01\images\s1.jpg" />
+    <Content Include="BrurayAndDVD\01\images\s2.webp" />
+    <Content Include="BrurayAndDVD\02\images\s1.webp" />
+    <Content Include="BrurayAndDVD\02\images\s2.webp" />
+    <Content Include="BrurayAndDVD\03\images\s1.webp" />
+    <Content Include="BrurayAndDVD\03\images\s2.webp" />
+    <Content Include="BrurayAndDVD\campaign\images\s1.webp" />
+    <Content Include="BrurayAndDVD\campaign\images\s2.webp" />
+    <Content Include="BrurayAndDVD\privilege\images\s1.webp" />
+    <Content Include="BrurayAndDVD\privilege\images\s2.webp" />
+    <Content Include="Chara\01\images\s1.webp" />
+    <Content Include="Chara\01\images\s2.webp" />
+    <Content Include="Chara\02\images\s1.webp" />
+    <Content Include="Chara\02\images\s2.webp" />
+    <Content Include="Chara\03\images\s1.webp" />
+    <Content Include="Chara\03\images\s2.webp" />
+    <Content Include="Chara\04\images\s1.webp" />
+    <Content Include="Chara\04\images\s2.webp" />
+    <Content Include="Chara\05\images\s1.webp" />
+    <Content Include="Chara\05\images\s2.webp" />
+    <Content Include="Chara\06\images\s1.webp" />
+    <Content Include="Chara\06\images\s2.webp" />
+    <Content Include="Chara\07\images\s1.webp" />
+    <Content Include="Chara\07\images\s2.webp" />
+    <Content Include="Chara\08\images\s1.webp" />
+    <Content Include="Chara\08\images\s2.webp" />
+    <Content Include="Chara\images\s1.webp" />
+    <Content Include="Chara\images\s2.webp" />
+    <Content Include="Film\images\s1.webp" />
+    <Content Include="Film\images\s2.webp" />
+    <Content Include="Gensaku\images\s1.webp" />
+    <Content Include="Gensaku\images\s2.webp" />
+    <Content Include="Goods\images\s1.webp" />
+    <Content Include="Goods\images\s2.webp" />
+    <Content Include="Music\images\s1.webp" />
+    <Content Include="Music\images\s2.webp" />
+    <Content Include="News\images\s1.jpg" />
+    <Content Include="News\images\s2.webp" />
+    <Content Include="OnAir\images\s1.jpg" />
+    <Content Include="OnAir\images\s2.webp" />
+    <Content Include="Header_footer\Footer\images\s2.webp" />
+    <Content Include="Header_footer\Header\images\s2.webp" />
+    <Content Include="images\s2.webp" />
+    <Content Include="MasterPage.Master" />
+    <None Include="packages.config" />
+    <Content Include="StaffAndCast\images\s1.webp" />
+    <Content Include="StaffAndCast\images\s2.webp" />
+    <Content Include="Story\01\images\s1.webp" />
+    <Content Include="Story\01\images\s2.webp" />
+    <Content Include="Story\images\s1.webp" />
+    <Content Include="Story\images\s2.webp" />
+    <Content Include="Supesharu\images\s1.webp" />
+    <Content Include="Supesharu\images\s2.webp" />
+    <Content Include="Top\images\s1.jpg" />
+    <Content Include="Top\images\s2.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44368/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

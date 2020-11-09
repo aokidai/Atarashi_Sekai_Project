@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="NewWordProject.MasterPage" %>
+
+<%@ Register src="Header_footer/Header/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="Header_footer/Footer/Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト</title>
+    <link rel="icon" type="image/png" sizes="32x16" href="images/star.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/common.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <uc1:Header ID="Header1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <uc2:Footer ID="Footer1" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
