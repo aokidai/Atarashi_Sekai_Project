@@ -525,6 +525,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\model.cs" />
     <Compile Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
       <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

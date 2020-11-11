@@ -60,6 +60,18 @@
                 </div>
                 <div class="news">
                     <div id="boder"><span id="title">ニュース</span></div>
+                    <div>
+
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="margin-left: 5%" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="newsName" HeaderText="newsName" SortExpression="newsName" />
+                                <asp:BoundField DataField="link" HeaderText="link" SortExpression="link" />
+                                <asp:HyperLinkField DataNavigateUrlFields="newsName" DataNavigateUrlFormatString="~/News/ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" DataTextField="newsName" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [newsName], [link] FROM [News]"></asp:SqlDataSource>
+
+                    </div>
                 </div>
 
                 <div class="film">
