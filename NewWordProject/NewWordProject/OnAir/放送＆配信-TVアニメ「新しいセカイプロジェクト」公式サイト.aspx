@@ -57,17 +57,30 @@
                 <div id="nana">
                     <div>
                         <div id="menu_ss1">
-                            <span>放送情報<br />--------------------------------------------------------------------------------------<br /></span>
-                            <div>
+                            <span>放送情報<br />--------------------------------------------------------------------------------------</span><div align="center" style="text-align:center">
                                 <!--asp.net-->
+                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" style="margin-left: 95px" Width="850px">
+                                    <Columns>
+                                        <asp:BoundField DataField="kaisha" SortExpression="kaisha" />
+                                        <asp:BoundField DataField="jouhou" SortExpression="jouhou" />
+                                        <asp:BoundField DataField="linkKaisha" HeaderText="linkKaisha" SortExpression="linkKaisha" Visible="False" />
+                                    </Columns>
+                                </asp:GridView>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [kaisha], [jouhou], [linkKaisha] FROM [OnAir]"></asp:SqlDataSource>
                             </div>
                             <span>*放送日時は予告なく変更になる場合がございます。予めご了承下さい。</span>
                         </div>
                         <br />
                         <div id="menu_ss2">
-                            <span>配信情報<br />--------------------------------------------------------------------------------------<br /></span>
-                            <div>
+                            <span>配信情報<br />--------------------------------------------------------------------------------------</span><div align="center" style="text-align:center">
                                 <!--asp.net-->
+                                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" style="margin-left: 95px" Width="850px">
+                                    <Columns>
+                                        <asp:BoundField DataField="kaisha" SortExpression="kaisha" />
+                                        <asp:BoundField DataField="jouhou" SortExpression="jouhou" />
+                                        <asp:BoundField DataField="linkKaisha" HeaderText="linkKaisha" SortExpression="linkKaisha" Visible="False" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                             <span>*その他サイトも2月12日(月)深夜23時30分以降、順次配信予定。詳細は各サイトでチェック！</span>
                         </div>

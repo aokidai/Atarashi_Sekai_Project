@@ -92,7 +92,8 @@
     margin-left: 20%;
     float: left;
     text-align: center;
-  }
+    width: 183px;
+}
   #menu_ss2{
     float: right;
     margin-right: 35%;

@@ -59,11 +59,15 @@
                     <div>
                         <div id="menu_ss1">
                             <div>
-                                <div class="box">
-                                    <span class="title2">ムービー</span>
-                                </div>
                                 <div>
                                     <!--Naiyo-->
+                                    <span>PV02:<br /></span>
+                                    <iframe style="clear: both; margin-left: 5%;" width="700px" height="500px"
+                                    src="https://www.youtube.com/embed/m2VCJGsBZdM?autoplay=1&mute=1"></iframe>
+                                    <br />
+                                    <span>PV01:<br /></span>
+                                    <iframe style="clear: both; margin-left: 5%;" width="700px" height="500px"
+                                    src="https://www.youtube.com/embed/m2VCJGsBZdM?autoplay=1&mute=1"></iframe>
                                 </div>
                             </div>
                         </div>

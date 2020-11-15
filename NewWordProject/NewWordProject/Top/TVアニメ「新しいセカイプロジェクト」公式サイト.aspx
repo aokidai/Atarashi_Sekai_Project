@@ -9,6 +9,10 @@
     <link rel="icon" type="image/png" sizes="32x16" href="images/star.png">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/common.js"></script>
+    <style type="text/css">
+        .5% {}
+        .5% {}
+    </style>
 </head>
 <script>
     function openNav() {
@@ -60,12 +64,12 @@
                 </div>
                 <div class="news">
                     <div id="boder"><span id="title">ニュース</span></div>
-                    <div>
+                    <div style="margin-left:5%; text-align:center">
 
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="margin-left: 5%" DataSourceID="SqlDataSource1">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="text-align: center" DataSourceID="SqlDataSource1" Width="397px">
                             <Columns>
-                                <asp:BoundField DataField="newsName" HeaderText="newsName" SortExpression="newsName" />
-                                <asp:BoundField DataField="link" HeaderText="link" SortExpression="link" />
+                                <asp:BoundField DataField="newsName" HeaderText="newsName" SortExpression="newsName" Visible="False" />
+                                <asp:BoundField DataField="link" HeaderText="link" SortExpression="link" Visible="False" />
                                 <asp:HyperLinkField DataNavigateUrlFields="newsName" DataNavigateUrlFormatString="~/News/ニュース-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" DataTextField="newsName" />
                             </Columns>
                         </asp:GridView>

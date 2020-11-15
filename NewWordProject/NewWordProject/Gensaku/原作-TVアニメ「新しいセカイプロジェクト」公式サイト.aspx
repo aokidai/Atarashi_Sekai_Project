@@ -51,25 +51,43 @@
     <section id="ss">
         <aside>
             <div>
-                <div id="title" align="center"><span id="ttstyle">放送＆配信</span></div>
+                <div id="title" align="center" style="color:white">原作</div>
             </div>
             <div id="naiyo" align="center">
                 <div id="nana">
                     <div>
                         <div id="menu_ss1">
-                            <span>放送情報<br />--------------------------------------------------------------------------------------<br /></span>
-                            <div>
+                            <span>小説<br />--------------------------------------------------------------------------------------<br />
+                            
+                            </span>
+                            <div align="center">
                                 <!--asp.net-->
+                                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="4">
+                                    <ItemTemplate>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl='<%# "~/Gensaku/images/"+Eval("images") %>' NavigateUrl='<%# Eval("naiyo", "{0}") %>'>[HyperLink1]</asp:HyperLink>
+                                        <br />
+<br />
+                                    </ItemTemplate>
+                                </asp:DataList>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="gen1" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                             </div>
-                            <span>*放送日時は予告なく変更になる場合がございます。予めご了承下さい。</span>
+                           
                         </div>
                         <br />
                         <div id="menu_ss2">
-                            <span>配信情報<br />--------------------------------------------------------------------------------------<br /></span>
-                            <div>
+                            <span>コミックス<br />--------------------------------------------------------------------------------------<br /></span>
+                            <div align="center">
                                 <!--asp.net-->
+                                <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2" RepeatColumns="4">
+                                    <ItemTemplate>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl='<%# "~/Gensharu/images/"+Eval("images") %>' NavigateUrl='<%# Eval("naiyo", "{0}") %>'>[HyperLink1]</asp:HyperLink>
+                                        <br />
+                                        <br />
+                                    </ItemTemplate>
+                                </asp:DataList>
+                                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="gen2" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                             </div>
-                            <span>*その他サイトも2月12日(月)深夜23時30分以降、順次配信予定。詳細は各サイトでチェック！</span>
+                            
                         </div>
                         <br />
                         <div id="menu_ss3">

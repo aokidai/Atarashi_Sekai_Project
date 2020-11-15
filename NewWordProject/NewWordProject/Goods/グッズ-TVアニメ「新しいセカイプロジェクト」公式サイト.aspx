@@ -58,6 +58,17 @@
                     <div>
                         <div id="menu_ss1">
 
+                            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" ImageUrl='<%# "~/Goods/images/"+Eval("images") %>' NavigateUrl='<%# Eval("link", "{0}") %>'>[HyperLink2]</asp:HyperLink>
+                                    <br />
+                                    <asp:Label ID="gNameLabel" runat="server" Text='<%# Eval("gName") %>' />
+                                    <br />
+                                    <br />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [images], [link], [gName] FROM [Goods]"></asp:SqlDataSource>
+
                         </div>
                     </div>
                 </div>

@@ -45,7 +45,7 @@
         </div>
         <span style="font-size:30px;cursor:pointer; float:right" onclick="openNav()">&#9776;</span>
         <div align="center">
-            <a href="../top/TVアニメ「新しいセカイプロジェクト」公式サイト.aspx"><img id="logo" src="./images/kumakuma.svg"></a>
+            <a href="../../top/TVアニメ「新しいセカイプロジェクト」公式サイト.aspx"><img id="logo" src="./images/kumakuma.svg"></a>
         </div>
         <br />
     </nav>
@@ -66,8 +66,21 @@
                     <br />
                 </div>
                 <div id="menu_ss2">
-                    <div>
-                        <span>ioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgid</span>
+                    <div align="center">
+                    
+                        <asp:DataList ID="DataList1" runat="server" DataKeyField="storyID" DataSourceID="SqlDataSource1" Width="385px" style="margin-left: 0px">
+                            <ItemTemplate>
+                                <asp:Label ID="storyNameLabel" runat="server" Text='<%# Eval("storyName") %>' />
+                                <br />
+                                <asp:Label ID="naiyoStoryLabel" runat="server" Text='<%# Eval("naiyoStory") %>' />
+                                <br />
+                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Story/01/images/"+Eval("images") %>' />
+                                <br />
+                                ----------------------<br />
+                            </ItemTemplate>
+                        </asp:DataList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="storyname2" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                    
                     </div>
                 </div>
             </div>

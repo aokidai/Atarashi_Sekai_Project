@@ -70,12 +70,32 @@
                     <tr>
                         <td>
                             <div id="hah">
-                                <span>shjgdhjskghjkds<br />yuisedgyiue</span>
+                                
+                                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+                                    <ItemTemplate>
+                                        &nbsp;<asp:Label ID="staffNameLabel" runat="server" Text='<%# Eval("staffName") %>' />
+                                        <asp:Label ID="shigotoLabel" runat="server" Text='<%# Eval("shigoto") %>' />
+                                        <br />
+                                        <br />
+                                    </ItemTemplate>
+                                </asp:DataList>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [staffName], [shigoto] FROM [Staff]"></asp:SqlDataSource>
+                                
                             </div>
                         </td>
                         <td>
                             <div id="hah">
-                                <span>shjgdhjskghjkds<br />yuisedgyiue</span>
+                                
+                                <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2">
+                                    <ItemTemplate>
+                                        <asp:Label ID="shigotoLabel" runat="server" Text='<%# Eval("shigoto") %>' />
+                                        <asp:Label ID="staffNameLabel" runat="server" Text='<%# Eval("staffName") %>' />
+                                        <br />
+<br />
+                                    </ItemTemplate>
+                                </asp:DataList>
+                                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [shigoto], [staffName] FROM [Cast]"></asp:SqlDataSource>
+                                
                             </div>
                         </td>
                     </tr>

@@ -54,32 +54,21 @@
                 <div id="title" align="center"><span id="ttstyle">ニュース</span></div>
             </div>
             <div id="naiyo" align="center">
-                <div id="nana">
-                    <!--news no naiyo-->
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
-                    <span>kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br />kokoha naiyono news
-                        desu<br />kokoha naiyono news desu<br />kokoha naiyono news desu<br /></span>
+                <div id="nana" align="center">
+                   
+                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+                        <ItemTemplate>
+                            <asp:Label ID="newsNameLabel" runat="server" Text='<%# Eval("newsName") %>' />
+                            <br />
+                            <asp:Label ID="dateUpdateLabel" runat="server" Text='<%# Eval("dateUpdate") %>' />
+                            <br />
+                            <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
+                            &nbsp;<br />
+                            <br />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT [dateUpdate], [naiyo], [link], [newsName] FROM [News]"></asp:SqlDataSource>
+                   
                 </div>
             </div>
         </aside>

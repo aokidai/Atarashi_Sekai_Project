@@ -55,7 +55,22 @@
                 <div id="title" align="center"><span id="ttstyle">キャラクター</span></div>
             </div>
             <div id="naiyo">
-                <div id="setsume">
+                <div id="setsume" align="center">
+
+                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatLayout="Flow">
+                        <ItemTemplate>
+                            <asp:Label ID="kyanNameLabel" runat="server" Text='<%# Eval("kyanName") %>' />
+                            <br />
+                            <asp:Label ID="kyanCVLabel" runat="server" Text='<%# Eval("kyanCV") %>' />
+                            <br />
+                            <asp:Label ID="kyanShokaiLabel" runat="server" Text='<%# Eval("kyanShokai") %>' />
+                            <br />
+                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Chara/images/"+Eval("kyanImage") %>' />
+                            <br />
+<br />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="kyan1" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
 
                 </div>
                 <br />

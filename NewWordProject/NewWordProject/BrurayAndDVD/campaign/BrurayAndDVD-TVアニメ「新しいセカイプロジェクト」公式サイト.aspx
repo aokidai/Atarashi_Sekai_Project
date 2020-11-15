@@ -95,6 +95,19 @@
                                 </div>
                                 <div>
                                     <!--Naiyo-->
+                                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatLayout="Flow">
+                                        <ItemTemplate>
+                                            <asp:Label ID="DVDMaiLabel" runat="server" Text='<%# Eval("DVDMai") %>' />
+                                            <br />
+                                            <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
+                                            <br />
+                                            <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
+                                            <br />
+                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <br />
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="br4" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                 </div>
                             </div>
 

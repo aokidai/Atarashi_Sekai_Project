@@ -66,7 +66,19 @@
                 </div>
                 <div id="menu_ss2">
                     <div>
-                        <span>ioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgidioefoitgfiouetdiufetgitiguio<br />dfiudksfgdkgid</span>
+                        
+                        <asp:DataList ID="DataList1" runat="server" DataKeyField="storyID" DataSourceID="SqlDataSource1" Width="372px">
+                            <ItemTemplate>
+                                &nbsp;<asp:Label ID="storyNameLabel" runat="server" Text='<%# Eval("storyName") %>' />
+                                <br />
+                                <br />
+                                <asp:Label ID="naiyoStoryLabel" runat="server" Text='<%# Eval("naiyoStory") %>' />
+                                <br />
+                                <br />
+                            </ItemTemplate>
+                        </asp:DataList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="storyname" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                        
                     </div>
                 </div>
             </div>

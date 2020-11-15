@@ -63,6 +63,18 @@
                                 </div>
                                 <div>
                                     <!--Naiyo-->
+                                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatLayout="Flow">
+                                        <ItemTemplate>
+                                            <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
+                                            <br />
+                                            <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
+                                            <br />
+                                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Music/images/"+Eval("images") %>' />
+                                            <br />
+                                            <br />
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="music1" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                 </div>
                             </div>
                         </div>
@@ -74,6 +86,18 @@
                                 </div>
                                 <div>
                                     <!--Naiyo-->
+                                    <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2">
+                                        <ItemTemplate>
+                                            <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
+                                            <br />
+                                            <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
+                                            <br />
+                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <br />
+<br />
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="music2" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                 </div>
                             </div>
                         </div>
@@ -85,6 +109,18 @@
                                 </div>
                                 <div>
                                     <!--Naiyo-->
+                                    <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource3">
+                                        <ItemTemplate>
+                                            <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
+                                            <br />
+                                            <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
+                                            <br />
+                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <br />
+<br />
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="music3" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                 </div>
                             </div>
                         </div>

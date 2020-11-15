@@ -70,6 +70,7 @@
     <Content Include="BrurayAndDVD\01\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
     <Content Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
     <Content Include="BrurayAndDVD\01\css\style.css" />
+    <Content Include="BrurayAndDVD\01\images\00000122.jpg" />
     <Content Include="BrurayAndDVD\01\images\ad1.gif" />
     <Content Include="BrurayAndDVD\01\images\ad2.png" />
     <Content Include="BrurayAndDVD\01\images\bg.jpg" />
@@ -83,6 +84,7 @@
     <Content Include="BrurayAndDVD\02\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
     <Content Include="BrurayAndDVD\02\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
     <Content Include="BrurayAndDVD\02\css\style.css" />
+    <Content Include="BrurayAndDVD\02\images\00000126.jpg" />
     <Content Include="BrurayAndDVD\02\images\ad1.gif" />
     <Content Include="BrurayAndDVD\02\images\ad2.png" />
     <Content Include="BrurayAndDVD\02\images\bg.jpg" />
@@ -97,6 +99,7 @@
     <Content Include="BrurayAndDVD\03\Bruray&amp;DVD-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
     <Content Include="BrurayAndDVD\03\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
     <Content Include="BrurayAndDVD\03\css\style.css" />
+    <Content Include="BrurayAndDVD\03\images\00000128.jpg" />
     <Content Include="BrurayAndDVD\03\images\ad1.gif" />
     <Content Include="BrurayAndDVD\03\images\ad2.png" />
     <Content Include="BrurayAndDVD\03\images\bg.jpg" />
@@ -313,6 +316,14 @@
     <Content Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
     <Content Include="Chara\08\キャラクター-TVアニメ「新しいセカイプロジェクト」公式サイト.html" />
     <Content Include="Chara\css\style.css" />
+    <Content Include="Chara\images\008_main.png" />
+    <Content Include="Chara\images\009_main.png" />
+    <Content Include="Chara\images\010_main.png" />
+    <Content Include="Chara\images\011_main.png" />
+    <Content Include="Chara\images\012_main.png" />
+    <Content Include="Chara\images\020_main.png" />
+    <Content Include="Chara\images\021_sub.jpg" />
+    <Content Include="Chara\images\022_sub.jpg" />
     <Content Include="Chara\images\ad1.gif" />
     <Content Include="Chara\images\ad2.png" />
     <Content Include="Chara\images\bg.jpg" />
@@ -355,10 +366,12 @@
     <Content Include="Gensaku\images\bg.jpg" />
     <Content Include="Gensaku\images\bg1.jpg" />
     <Content Include="Gensaku\images\bg2.jpg" />
+    <Content Include="Gensaku\images\comic_1.jpg" />
     <Content Include="Gensaku\images\jouhou.PNG" />
     <Content Include="Gensaku\images\kumakuma.svg" />
     <Content Include="Gensaku\images\logo.PNG" />
     <Content Include="Gensaku\images\logo2.PNG" />
+    <Content Include="Gensaku\images\novel_1.jpg" />
     <Content Include="Gensaku\images\s1.jpg" />
     <Content Include="Gensaku\images\s3.jpg" />
     <Content Include="Gensaku\原作-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx" />
@@ -371,6 +384,14 @@
     <Content Include="Goods\images\bg2.jpg" />
     <Content Include="Goods\images\jouhou.PNG" />
     <Content Include="Goods\images\kumakuma.svg" />
+    <Content Include="Goods\images\l3%281%29.jpg" />
+    <Content Include="Goods\images\l3%282%29.jpg" />
+    <Content Include="Goods\images\l3%283%29.jpg" />
+    <Content Include="Goods\images\l3%284%29.jpg" />
+    <Content Include="Goods\images\l3%285%29.jpg" />
+    <Content Include="Goods\images\l3%286%29.jpg" />
+    <Content Include="Goods\images\l3%287%29.jpg" />
+    <Content Include="Goods\images\l3%288%29.jpg" />
     <Content Include="Goods\images\logo.PNG" />
     <Content Include="Goods\images\logo2.PNG" />
     <Content Include="Goods\images\s1.jpg" />
@@ -415,6 +436,9 @@
     <Content Include="images\s1.jpg" />
     <Content Include="images\s3.jpg" />
     <Content Include="Music\css\style.css" />
+    <Content Include="Music\images\00000036.jpg" />
+    <Content Include="Music\images\00000041.jpg" />
+    <Content Include="Music\images\00000148.jpg" />
     <Content Include="Music\images\ad1.gif" />
     <Content Include="Music\images\ad2.png" />
     <Content Include="Music\images\bg.jpg" />
@@ -504,6 +528,10 @@
     <Content Include="Supesharu\images\bg2.jpg" />
     <Content Include="Supesharu\images\jouhou.PNG" />
     <Content Include="Supesharu\images\kumakuma.svg" />
+    <Content Include="Supesharu\images\l1%281%29.jpg" />
+    <Content Include="Supesharu\images\l1%282%29.jpg" />
+    <Content Include="Supesharu\images\l1.jpg" />
+    <Content Include="Supesharu\images\l1.png" />
     <Content Include="Supesharu\images\logo.PNG" />
     <Content Include="Supesharu\images\logo2.PNG" />
     <Content Include="Supesharu\images\s1.jpg" />
