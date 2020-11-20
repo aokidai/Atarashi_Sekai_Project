@@ -97,13 +97,11 @@
                                     <!--Naiyo-->
                                     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatLayout="Flow">
                                         <ItemTemplate>
-                                            <asp:Label ID="DVDMaiLabel" runat="server" Text='<%# Eval("DVDMai") %>' />
-                                            <br />
                                             <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
                                             <br />
                                             <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
                                             <br />
-                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/BrurayAndDVD/01/images/"+Eval("images") %>' />
                                             <br />
                                             <br />
                                         </ItemTemplate>

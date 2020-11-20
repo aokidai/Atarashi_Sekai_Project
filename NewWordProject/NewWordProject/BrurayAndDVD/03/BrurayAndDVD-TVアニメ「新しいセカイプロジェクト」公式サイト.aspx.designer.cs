@@ -11,7 +11,7 @@ namespace NewWordProject.BrurayAndDVD._01
 {
 
 
-    public partial class aBrurayAndDVD_TVアニメ_新しいセカイプロジェクト_公式サイト
+    public partial class i_BrurayAndDVD_TVアニメ_新しいセカイプロジェクト_公式サイト
     {
 
         /// <summary>

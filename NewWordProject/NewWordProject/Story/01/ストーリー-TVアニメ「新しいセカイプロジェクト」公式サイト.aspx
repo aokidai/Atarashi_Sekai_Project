@@ -74,7 +74,7 @@
                                 <br />
                                 <asp:Label ID="naiyoStoryLabel" runat="server" Text='<%# Eval("naiyoStory") %>' />
                                 <br />
-                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Story/01/images/"+Eval("images") %>' />
+                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Story/01/images/"+Eval("storyImages") %>' />
                                 <br />
                                 ----------------------<br />
                             </ItemTemplate>

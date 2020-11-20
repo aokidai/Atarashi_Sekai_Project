@@ -86,15 +86,14 @@
                                 </div>
                                 <div>
                                     <!--Naiyo-->
-                                    <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2">
+                                    <asp:DataList ID="DataList4" runat="server" DataSourceID="SqlDataSource2" RepeatLayout="Flow">
                                         <ItemTemplate>
                                             <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
                                             <br />
                                             <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
                                             <br />
-                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <asp:Image ID="Image2" runat="server" ImageUrl='<%# "~/Music/images/"+Eval("images") %>' />
                                             <br />
-<br />
                                         </ItemTemplate>
                                     </asp:DataList>
                                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="music2" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
@@ -107,7 +106,7 @@
                                 <div class="box">
                                     <span class="title2">オリジナルサウンドトラック</span>
                                 </div>
-                                <div>
+                                <div align="center" style="text-align:center">
                                     <!--Naiyo-->
                                     <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource3">
                                         <ItemTemplate>
@@ -115,7 +114,7 @@
                                             <br />
                                             <asp:Label ID="naiyoLabel" runat="server" Text='<%# Eval("naiyo") %>' />
                                             <br />
-                                            <asp:Label ID="imagesLabel" runat="server" Text='<%# Eval("images") %>' />
+                                            <asp:Image ID="Image3" runat="server" ImageUrl='<%# "~/Music/images/"+Eval("images") %>' />
                                             <br />
 <br />
                                         </ItemTemplate>

@@ -174,3 +174,4 @@ C:\Users\toyam\OneDrive\デスクトップ\New_Sekai_Project\NewWordProject\NewW
 C:\Users\toyam\OneDrive\デスクトップ\New_Sekai_Project\NewWordProject\NewWordProject\obj\Debug\NewWordProject.csproj.CopyComplete
 C:\Users\toyam\OneDrive\デスクトップ\New_Sekai_Project\NewWordProject\NewWordProject\obj\Debug\NewWordProject.dll
 C:\Users\toyam\OneDrive\デスクトップ\New_Sekai_Project\NewWordProject\NewWordProject\obj\Debug\NewWordProject.pdb
+C:\Users\toyam\OneDrive\デスクトップ\New_Sekai_Project\NewWordProject\NewWordProject\obj\Debug\NewWordProject.csprojAssemblyReference.cache

@@ -56,7 +56,7 @@
             <div id="naiyo" align="center">
                 <div id="nana">
                     <div>
-                        <div id="menu_ss1">
+                        <div id="menu_ss1" align="center">
                             <span>放送情報<br />--------------------------------------------------------------------------------------</span><div align="center" style="text-align:center">
                                 <!--asp.net-->
                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" style="margin-left: 95px" Width="850px">
@@ -71,7 +71,7 @@
                             <span>*放送日時は予告なく変更になる場合がございます。予めご了承下さい。</span>
                         </div>
                         <br />
-                        <div id="menu_ss2">
+                        <div id="menu_ss2" align="center">
                             <span>配信情報<br />--------------------------------------------------------------------------------------</span><div align="center" style="text-align:center">
                                 <!--asp.net-->
                                 <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" style="margin-left: 95px" Width="850px">

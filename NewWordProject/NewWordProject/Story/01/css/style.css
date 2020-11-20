@@ -94,12 +94,9 @@
     text-align: center;
     width: 183px;
 }
-  #menu_ss2{
+#menu_ss2 {
     float: right;
     margin-right: 35%;
-    height: 450px;
-    width: 438px;
-    margin-top: 0px;
 }
 .combobox{
   width: 150px;
