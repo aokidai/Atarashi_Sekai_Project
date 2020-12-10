@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="NewWordProject.Login.master" %>
+
+<%@ Register src="UC/na.ascx" tagname="na" tagprefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Admin-TVアニメ「新しいセカイプロジェクト」公式サイト</title>
+    <link rel="icon" type="image/png" sizes="32x16" href="images/star.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/common.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <nav>
+                    <div id="subnav" style="float:right">            
+                        
+                        <uc1:na ID="na1" runat="server" />
+                        
+                    </div>
+                </nav>
+                <section>
+                    <article>
+                        <!--code asp-->
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </article>
+                </section>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

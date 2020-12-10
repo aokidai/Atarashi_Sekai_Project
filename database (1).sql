@@ -326,6 +326,9 @@ insert into Supesharu values('su','','l1(1).jpg')
 insert into Supesharu values('su','','l1(2).jpg')
 insert into Supesharu values('su','','l1.jpg')
 insert into Supesharu values('su','','l1.png')
+
+insert into Account values('Admin','AokiDaisuke','12345')
+insert into Account values('User','Yamamoto','12345')
 go
 create proc topnew
 as

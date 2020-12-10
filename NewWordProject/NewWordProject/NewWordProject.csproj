@@ -435,6 +435,14 @@
     <Content Include="images\logo2.PNG" />
     <Content Include="images\s1.jpg" />
     <Content Include="images\s3.jpg" />
+    <Content Include="Login\Create\Create.aspx" />
+    <Content Include="Login\css\style.css" />
+    <Content Include="Login\Forgot\forgot.aspx" />
+    <Content Include="Login\Home\Home.aspx" />
+    <Content Include="Login\Login\Lg.aspx" />
+    <Content Include="Login\UC\login.ascx" />
+    <Content Include="Login\UC\css\style.css" />
+    <Content Include="Login\UC\na.ascx" />
     <Content Include="Music\css\style.css" />
     <Content Include="Music\images\00000036.jpg" />
     <Content Include="Music\images\00000041.jpg" />
@@ -555,6 +563,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\model.cs" />
+    <Content Include="App_Code\XLDL.cs" />
     <Compile Include="BrurayAndDVD\01\BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx.cs">
       <DependentUpon>BrurayAndDVD-TVアニメ「新しいセカイプロジェクト」公式サイト.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -688,6 +697,55 @@
     <Compile Include="Header_footer\Header\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Login\Create\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Create\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Forgot\forgot.aspx.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Forgot\forgot.aspx.designer.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Home\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Home\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login\Lg.aspx.cs">
+      <DependentUpon>Lg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login\Lg.aspx.designer.cs">
+      <DependentUpon>Lg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UC\login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UC\login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UC\na.ascx.cs">
+      <DependentUpon>na.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UC\na.ascx.designer.cs">
+      <DependentUpon>na.ascx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -798,6 +856,7 @@
     <Content Include="Header_footer\Header\images\s2.webp" />
     <Content Include="images\s2.webp" />
     <Content Include="MasterPage.Master" />
+    <Content Include="Login\master.Master" />
     <None Include="packages.config" />
     <Content Include="StaffAndCast\images\s1.webp" />
     <Content Include="StaffAndCast\images\s2.webp" />
@@ -816,6 +875,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

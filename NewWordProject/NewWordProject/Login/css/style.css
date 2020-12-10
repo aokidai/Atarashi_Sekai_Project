@@ -1,0 +1,61 @@
+nav{
+    clear: both;
+    background-color: #79b22f;
+    height: 45px;
+}
+nav div#subnav{
+    width: 1200px;
+    margin: 0px auto;
+}
+nav ul{
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+}
+nav ul li{
+    float:left;
+    padding: 11px 15px;
+}
+nav ul li a{
+    color: #206AB5;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li:hover a{
+    border-bottom: 5px solid #206AB5;
+}
+nav div#subnav>div{
+    float: right;
+    background-color: white;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 34px;
+    width: 380px;
+    border: 0.5px solid #ced2dd;
+    border-radius: 5px;
+}
+nav div#subnav>div input[type=text]
+{
+    float: left;
+    height: 29px;
+    width: 250px;
+    font-size: 14px;
+    border: none;
+}
+nav div#subnav>div input[type=submit]
+{
+    float: right;
+    height: 100%;
+    width: 80px;
+    background: #f7f2e7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0.5px solid #ced2dd;
+    font-size:14px
+}
+nav div#subnav>div input[type=submit]:hover{
+    cursor: pointer;
+}
